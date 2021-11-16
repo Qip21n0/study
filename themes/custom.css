@@ -6,6 +6,70 @@ section {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
 section.title {
-    text-align: center;
+    --title-height: 130px;
+    --subtitle-height: 70px;
+    --name-height: 50px;
+    --date-height: 50px;
+  
+    overflow: visible;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr var(--title-height) 1fr var(--subtitle-height) var(--name-height) var(--date-height) ;
+    grid-template-areas: "." "title" "subtitle" "name" "date" ".";
 }
+
+section.title h1, 
+section.title h2,
+section.title h3,
+section.title h4 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    height: var(--area-height);
+    line-height: var(--area-height);
+    font-size: calc(var(--area-height) * 0.7);
+
+    /* border: 1px dashed gray;  debug */
+}
+  
+section.title h1 {
+    grid-area: title;
+    --area-height: var(--title-height);
+}
+  
+section.title h2 {
+    grid-area: subtitle;
+    --area-height: var(--subtitle-height);
+}
+
+section.title h3 {
+    grid-area: name;
+    --area-height: var(--name-height);
+}
+
+section.title h4 {
+    grid-area: date;
+    --area-height: var(--date-height);
+}
+
+
+section.split {
+    overflow: visible;
+    display: grid;
+    grid-template-columns: 540px 20px 540px;
+    grid-template-rows: 90px auto;
+    grid-template-areas: 
+        "slideheading slideheading slideheading"
+        "leftpanel . rightpanel";
+}
+
+/* debug 
+section.split h1, 
+section.split .left, 
+section.split .right { border: 1.5pt dashed dimgray; }
+*/
+section.split h1 { grid-area: slideheading; }
+section.split .left { grid-area: leftpanel; }
+section.split .right { grid-area: rightpanel; }
