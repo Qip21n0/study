@@ -6,6 +6,11 @@ section {
     font-family: 'Noto Sans';
 }
 
+section.page h1 {
+    position: absolute;
+    left: 50px; top: 70px;
+}
+
 
 section.title {
     --title-height: 130px;
@@ -65,11 +70,11 @@ section.split {
         "leftpanel . rightpanel";
 }
 
-/* debug 
+/* debug */ 
 section.split h1, 
 section.split .left, 
 section.split .right { border: 1.5pt dashed dimgray; }
-*/
+
 section.split h1 { grid-area: slideheading; }
 section.split .left { grid-area: leftpanel; }
 section.split .right { grid-area: rightpanel; }
