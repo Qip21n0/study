@@ -40,6 +40,7 @@ jobs:
         with:
           allowUpdates: true
           artifacts: ${{env.DST}}/${{env.RELEASE_VERSION}}.${{env.FORMAT}}
+          body: ${{env.DIR}}/main.md
           token: ${{secrets.GITHUB_TOKEN}}
           tag: v${{env.RELEASE_VERSION}}
           name: Release ${{env.RELEASE_VERSION}}
