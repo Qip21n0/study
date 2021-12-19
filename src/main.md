@@ -76,8 +76,8 @@ def sample():
 ```
 
 $$ 
-I_{xx} = \int \int_R y^2 f(x,y) \cdot dy dx \\
-z = \sum_{i=1}^N \max \left(\sqrt{x! - 1}, \lambda \right)
+I_{xx} = \int \int_{\color{cyan}R} y^2 f(x,y) \cdot dy dx \\
+z = \sum_{i=1}^N \max \left({\color{red}\sqrt{x! - 1}}, \lambda \right)
 $$
 
 ---
