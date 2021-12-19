@@ -100,6 +100,15 @@ _class: page
 _header: 'sample'
 _footer: 'sample'
 -->
+## 1
+- x
+- y
+- z
+
+## 2
+1. あ
+2. い
+3. う
 
 ---
 # 参考文献
