@@ -25,6 +25,9 @@ _class: title
 _class: page
 -->
 
+<br>
+<br>
+
 1. a
 	- a1
 	1. a2
@@ -35,7 +38,6 @@ _class: page
 3. c
 	- c1
 		1. c1i
-			- c1iい
 
 ---
 # 進捗
