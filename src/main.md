@@ -21,6 +21,9 @@ _class: title
 
 ---
 # もくじ
+<!--
+_class: page
+-->
 
 1. a
 	- a1
@@ -30,6 +33,9 @@ _class: title
 	- b2
 		- b2ii
 3. c
+	- c1
+		1. c1i
+			- c1iい
 
 ---
 # 進捗
