@@ -51,6 +51,7 @@ _footer: 'sample'
 ---
 # 進捗
 <!--
+_class: page
 _footer: 'sample'
 -->
 
@@ -66,6 +67,10 @@ $$
 
 ---
 # 進捗
+<!--
+_class: page
+_header: 'sample'
+-->
 ## 表
 | 左  |  中央  | 右  |
 | :-- | :---: | ---: |
@@ -76,6 +81,8 @@ $$
 ---
 # 課題
 <!--
+_class: page
+_header: 'sample'
 _footer: 'sample'
 -->
 
