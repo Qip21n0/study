@@ -67,6 +67,7 @@ _footer: 'sample'
 _class: page
 _footer: 'sample'
 -->
+`This is test.`
 
 ```py
 def sample():
