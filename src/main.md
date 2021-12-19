@@ -71,6 +71,7 @@ _footer: 'sample'
 ```py
 def sample():
 	print("hoge": fuga)
+	return False
 ```
 
 $$ 
