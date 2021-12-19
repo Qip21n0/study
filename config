@@ -1,4 +1,5 @@
 DIR=src
 DST=dist
 FORMAT=pdf
+THEME=themes
 RELEASE_VERSION=2021.12.20
