@@ -25,6 +25,7 @@ jobs:
         run: |
           mkdir ${{env.DST}}
           chmod 777 -R $_
+          cp ${{env.DIR}}/main.md ${{env.DST}}/${{env.RELEASE_VERSION}}.md
           
       - name: Export PDF
         run: docker run --rm --init -v "$(pwd):/home/marp/app/"
@@ -39,7 +40,7 @@ jobs:
         uses: ncipollo/release-action@v1
         with:
           allowUpdates: true
-          artifacts: ${{env.DST}}/${{env.RELEASE_VERSION}}.${{env.FORMAT}}, ${{env.DIR}}/main.md
+          artifacts: ${{env.DST}}/${{env.RELEASE_VERSION}}.${{env.FORMAT}}, ${{env.DST}}/${{env.RELEASE_VERSION}}.md
           token: ${{secrets.GITHUB_TOKEN}}
           tag: v${{env.RELEASE_VERSION}}
           name: Release ${{env.RELEASE_VERSION}}
