@@ -64,7 +64,7 @@ section.split {
     overflow: visible;
     display: grid;
     grid-template-columns: 540px 20px 540px;
-    grid-template-rows: 90px auto;
+    grid-template-rows: 60px auto;
     grid-template-areas: 
         "slideheading slideheading slideheading"
         "leftpanel . rightpanel";
